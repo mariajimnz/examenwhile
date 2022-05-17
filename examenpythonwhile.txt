@@ -1,0 +1,180 @@
+'''1) Una compañía de seguros tiene contratados a n vendedores. Cada uno hace tres ventas a
+la semana. Su política de pagos es que un vendedor recibe un sueldo base, y un 10% extra
+por comisiones de sus ventas. El gerente de su compañía desea saber cuanto dinero obtendrá en la semana cada vendedor por concepto de comisiones por las tres ventas
+realizadas, y cuanto tomando en cuenta su sueldo base y sus comisiones.'''
+
+n = int(input("Escribe el numero de trabajadores: "))
+a = 1
+comision = 0
+while a <= n:
+        sueldo = float(input("Escribe el sueldo base del trabajador: "))
+        v1 = float(input("Escribe venta 1: "))
+        v2 = float(input("Escribe venta 2: "))
+        v3 = float(input("Escribe venta 3: "))
+        comision = (v1+v2+v3) * .10
+        print("El sueldo mensual es: $", sueldo)
+        print("la comision del mes es: $", comision)
+        print("Total del sueldo: $", sueldo + comision)
+        a = a + 1
+
+
+
+'''En una empresa se requiere calcular el salario semanal de cada uno de los n obreros que
+laboran en ella. El salario se obtiene de la sig. forma:
+Si el obrero trabaja 40 horas o menos se le paga $20 por hora
+Si trabaja mas de 40 horas se le paga $20 por cada una de las primeras 40 horas y
+$25 por cada hora extra.'''
+
+obreros = int(input("Escribe el numero de trabajadores: "))
+b = 0
+while b <= obreros:
+    horas = int(input("Escribe el numero de horas trabajadas: "))
+    if horas <= 40:
+        salario1 = horas *20
+    else:
+        horaextra= horas -40
+        salario1= 40 * 20 + (horaextra * 25)
+        b = b + 1
+
+    print("El salario del trabajador ",b," es: $",salario1)
+
+
+
+
+'''Determinar cuantos hombres y cuantas mujeres se encuentran en un grupo de n personas,
+suponiendo que los datos son extraídos alumno por alumno.'''
+
+'''Determinar cuantos hombres y cuantas mujeres se encuentran en un grupo de n personas,
+suponiendo que los datos son extraídos alumno por alumno.'''
+
+alumnos = int(input("Escribe el numero de alumnos: "))
+c = 1
+hombres = 0
+mujeres = 0
+while c <= alumnos:
+    sexo = int(input("Escribe un numero de acuerdo a tu genero 1 = hombre y mujer otro numero: "))
+    if sexo == 1:
+        hombres = hombres + 1
+        c = c + 1
+    else:
+        mujeres = mujeres +1
+        c = c + 1
+
+print("El numero de alumnos hombres: ", hombres)
+print("El numero de alumnos mujeres: ", mujeres)
+
+
+
+
+'''El Depto. de Seguridad Publica y Transito del D.F. desea saber, de los n autos que entran
+a la ciudad de México, cuantos entran con calcomanía de cada color. Conociendo el ultimo
+dígito de la placa de cada automóvil se puede determinar el color de la calcomanía
+utilizando la sig. relación:
+DÍGITO COLOR
+1 o 2 amarilla
+3 o 4 rosa
+5 o 6 roja
+7 o 8 verde
+9 o 0 azul'''
+
+autos = int(input("Escribe la cantidad de autos: "))
+amarilla = 0
+rosa = 0
+roja = 0
+verde = 0
+azul = 0
+while autos > 0:
+    placa = int(input("Ingrese el ultimo digito de la placa: "))
+    if placa == 1 or placa == 2:
+        amarilla = amarilla + 1
+        if placa == 3 or placa == 4:
+            rosa = rosa + 1
+            if placa == 5 or placa == 6:
+                roja = roja + 1
+                if placa == 7 or placa == 8:
+                    verde = verde + 1
+                    if placa == 9 or placa == 0:
+                        azul = azul + 1
+                    else:
+                        print("Ingrese un numero correcto")
+                        autos = autos + 1
+    else:
+        autos = autos + 1
+    print("Autos con:")
+    print("Calcomania amarilla:", amarilla)
+    print("Calcomania rosa:", rosa)
+    print("Calcomania roja:", roja)
+    print("Calcomania verde:", verde)
+    print("Calcomania azul:", azul)
+
+
+
+
+
+'''Obtener el promedio de calificaciones de un grupo de n alumnos.'''
+
+alumnost = float(input("Ingrese total de alumnos: "))
+x = 1
+suma = 0
+while x <= alumnost:
+    edad = float(input("Ingrese tu edad: "))
+    suma = suma + edad
+    x = x+1
+print("El promedio de las edades es: ", suma / alumnost)
+
+
+
+'''En una empresa se requiere calcular el salario semanal de cada uno de los n obreros que
+laboran en ella. El salario se obtiene de la sig. forma:
+Si el obrero trabaja 40 horas o menos se le paga $20 por hora
+Si trabaja mas de 40 horas se le paga $20 por cada una de las primeras 40 horas y
+$25 por cada hora extra.'''
+
+obreros = int(input("Escribe el numero de trabajadores: "))
+b = 0
+while b <= obreros:
+    horas = int(input("Escribe el numero de horas trabajadas: "))
+    if horas <= 40:
+        salario1 = horas *20
+    else:
+        horaextra= horas -40
+        salario1= 40 * 20 + (horaextra * 25)
+        b = b + 1
+
+print("El salario del trabajador ",b," es: $",salario1)
+
+'''Determinar cuantos hombres y cuantas mujeres se encuentran en un grupo de n personas,
+suponiendo que los datos son extraídos alumno por alumno.'''
+
+'''Determinar cuantos hombres y cuantas mujeres se encuentran en un grupo de n personas,
+suponiendo que los datos son extraídos alumno por alumno.'''
+
+alumnos = int(input("Escribe el numero de alumnos: "))
+c = 1
+hombres = 0
+mujeres = 0
+while c <= alumnos:
+    sexo = int(input("Escribe un numero de acuerdo a tu genero 1 = hombre y mujer otro numero: "))
+    if sexo == 1:
+        hombres = hombres + 1
+        c = c + 1
+    else:
+        mujeres = mujeres +1
+        c = c + 1
+
+print("El numero de alumnos hombres: ", hombres)
+print("El numero de alumnos mujeres: ", mujeres)
+
+
+'''Obtener el promedio de calificaciones de un grupo de n alumnos.'''
+
+alumnost = float(input("Ingrese total de alumnos: "))
+x = 1
+suma = 0
+while x <= alumnost:
+    edad = float(input("Ingrese tu edad: "))
+    suma = suma + edad
+    x = x+1
+print("El promedio de las edades es: ", suma / alumnost)
+
+
